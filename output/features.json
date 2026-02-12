@@ -1,0 +1,122 @@
+{
+  "features": [
+    {
+      "type": "Functional",
+      "business_rules": [
+        "Evaluation must include Job title, Job description text, and Location/region metadata.",
+        "Scores are aggregated from 22 specific features.",
+        "Scoring covers four categories: Clarity of Posting, Inclusive Culture, Exclusive Practices, and Language."
+      ],
+      "source_reference": "Sections 4, 7.4, 8",
+      "feature_id": "F-0001",
+      "description": "Analyzes job description text using ML models to calculate a composite inclusivity score based on 22 signals.",
+      "name": "Job Description Inclusivity Scoring"
+    },
+    {
+      "name": "Improvement Recommendation Generation",
+      "type": "Functional",
+      "feature_id": "F-0002",
+      "description": "Generates actionable suggestions and recommendations to improve the inclusivity and clarity of job descriptions based on the scoring analysis.",
+      "source_reference": "Sections 4, 7.4"
+    },
+    {
+      "source_reference": "Sections 4, 7.2, 9",
+      "type": "Functional",
+      "name": "Score Recalculation",
+      "feature_id": "F-0003",
+      "description": "Allows recruiters to trigger a new scoring cycle after updating job description text to verify improvements."
+    },
+    {
+      "integrations": [
+        "Workday Recruiting"
+      ],
+      "constraints": [
+        "External system dependency on Workday Recruiting."
+      ],
+      "business_rules": [
+        "Workday remains the System of Record for all job requisition data.",
+        "Workday triggers the evaluation and consumes/displays the results."
+      ],
+      "type": "Integration",
+      "name": "Workday Recruiting Integration",
+      "feature_id": "F-0004",
+      "description": "Integration with Workday Recruiting to trigger inclusivity reviews during the job requisition lifecycle and display results within the Workday UI.",
+      "source_reference": "Sections 5, 7.1, 9"
+    },
+    {
+      "source_reference": "Sections 7.5, 10",
+      "name": "Scoring Persistence and Audit Logging",
+      "business_rules": [
+        "No candidate PII (Personally Identifiable Information) may be processed or stored."
+      ],
+      "feature_id": "F-0005",
+      "type": "Data",
+      "description": "Persists inclusivity scores, feature-level results, historical changes, and recommendation acceptance status for audit and trend analysis."
+    },
+    {
+      "description": "Exposes secure REST endpoints via AWS API Gateway for initial score calculation and subsequent recalculations.",
+      "type": "Integration",
+      "source_reference": "Sections 7.2, 10",
+      "constraints": [
+        "Token-based authentication required.",
+        "HTTPS/TLS encryption required."
+      ],
+      "feature_id": "F-0006",
+      "name": "Secure Scoring API"
+    },
+    {
+      "feature_id": "F-0007",
+      "source_reference": "Sections 7.3, 11",
+      "name": "Automated Scaling and Performance",
+      "description": "The system automatically scales compute resources to handle fluctuations in hiring volume while maintaining performance targets.",
+      "constraints": [
+        "Availability must be ≥ 99.9%.",
+        "Scoring performance must be < 3 seconds."
+      ],
+      "type": "Non-Functional"
+    },
+    {
+      "source_reference": "Sections 1, 11, 14",
+      "description": "The tool is designed to evaluate job descriptions written in English for English-speaking regions.",
+      "type": "Non-Functional",
+      "constraints": [
+        "English language only.",
+        "Job board character limits apply."
+      ],
+      "feature_id": "F-0008",
+      "name": "English Language Localization"
+    }
+  ],
+  "document_metadata": {
+    "analysis_timestamp": "2026-02-11T11:32:31.961970Z",
+    "document_name": "Job Inclusivity Tool Technical Architecture (As-Is)",
+    "document_version": "1.0"
+  },
+  "reasoning_log": [
+    {
+      "related_feature_ids": [
+        "F-0001"
+      ],
+      "evidence": "Section 4 (Scope) and Section 7.4 (ML Engine) describe these as the same core ML analysis activity.",
+      "decision": "Merged 'Job requisition evaluation' and 'Job description inclusivity scoring' into a single canonical feature."
+    },
+    {
+      "evidence": "Explicitly listed as a separate item in Section 4 (In Scope) and Section 7.2 (AWS API Layer).",
+      "decision": "Identified 'Score Recalculation' as a standalone functional feature.",
+      "related_feature_ids": [
+        "F-0003"
+      ]
+    },
+    {
+      "decision": "Classified 'English Language' as a Non-Functional feature rather than just a constraint.",
+      "evidence": "Section 1 defines the Geography as 'English-speaking countries' and Section 11 lists Localization as a design characteristic.",
+      "related_feature_ids": [
+        "F-0008"
+      ]
+    },
+    {
+      "evidence": "Section 15 explicitly lists these as 'Future Considerations (Out of Scope)'.",
+      "decision": "Excluded 'Candidate outcome correlation' and 'Analytics dashboards'."
+    }
+  ]
+}

@@ -11,5 +11,8 @@ dependencies = [
     "langchain-community>=0.4.1",
     "langchain-google-genai>=4.2.0",
     "langgraph>=1.0.7",
+    "langgraph-cli[inmem]>=0.4.12",
+    "langsmith>=0.6.4",
+    "python-docx>=1.2.0",
     "python-dotenv>=1.2.1",
 ]

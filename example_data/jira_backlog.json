@@ -1,0 +1,2003 @@
+[
+  {
+    "key": "DEF-1",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Recruiter cannot create requisition",
+      "description": "Error while initiating requisition",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-2",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Position not selectable in req",
+      "description": "Position not visible for recruiter",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-3",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Compensation not defaulting",
+      "description": "Req comp range missing",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-4",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Job not posted to LinkedIn",
+      "description": "Posting failed",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-5",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Job not visible on Indeed",
+      "description": "Job feed delay",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-6",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Candidate application stuck",
+      "description": "Status not progressing",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-7",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Resume not loading",
+      "description": "Resume attachment error",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-8",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Offer letter not generated",
+      "description": "Offer doc failed",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-9",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "DocuSign envelope pending",
+      "description": "Candidate cannot sign",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-10",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "SHL assessment not triggered",
+      "description": "Assessment invite missing",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-11",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "BGV initiation failed",
+      "description": "ScreenFact not triggered",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-12",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Candidate status incorrect",
+      "description": "Wrong stage shown",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-13",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Hiring manager cannot view req",
+      "description": "Access issue",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-14",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Recruiter missing inbox task",
+      "description": "Task not appearing",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-15",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Duplicate candidate profiles",
+      "description": "Duplicate created",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-16",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Job application timeout",
+      "description": "Session expires",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-17",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Offer accepted but hire not created",
+      "description": "Hire step failed",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-18",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Onboarding not triggered",
+      "description": "Hire completed, onboarding missing",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-19",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Incorrect job location",
+      "description": "Location mismatch",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-20",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Candidate email not sent",
+      "description": "Notification failure",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-21",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Req BP step skipped",
+      "description": "Conditional rule misfiring",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-22",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Compensation rule incorrect",
+      "description": "Pay range validation wrong",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-23",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "LinkedIn posting payload error",
+      "description": "Invalid job data",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-24",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Indeed feed mapping issue",
+      "description": "Job category mismatch",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-25",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "SHL callback not processed",
+      "description": "API response ignored",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-26",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "ScreenFact status sync delayed",
+      "description": "BGV status lag",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-27",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "DocuSign webhook failure",
+      "description": "Signature status not updated",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-28",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Update recruiter role access",
+      "description": "Missing domain permissions",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-29",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Fix hiring manager security group",
+      "description": "Cannot view candidates",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-30",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Duplicate candidate merge rules",
+      "description": "Auto-merge failing",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-31",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Offer letter template error",
+      "description": "Wrong clause shown",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-32",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Onboarding BP not triggered",
+      "description": "Condition mismatch",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-33",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Add audit field to requisition",
+      "description": "Compliance requirement",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-34",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Interview scheduling conflict",
+      "description": "Calendar sync issue",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-35",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Automate req creation from workforce plan",
+      "description": "Create req from approved plan",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-36",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "AI-based candidate screening",
+      "description": "Auto-rank applicants",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-37",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Unified job posting framework",
+      "description": "Centralized posting logic",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-38",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Extend DocuSign clauses by region",
+      "description": "Country-specific offer terms",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-39",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Real-time BGV status dashboard",
+      "description": "Visual BGV tracking",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-40",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Candidate duplicate prevention",
+      "description": "Pre-submit duplicate check",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-41",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Recruiter self-service reports",
+      "description": "Custom dashboards",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-42",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Hiring manager mobile actions",
+      "description": "Approvals on mobile",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-43",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Offer approval matrix by band",
+      "description": "Compensation-based routing",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-44",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Integration retry framework",
+      "description": "Auto-retry failed calls",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-45",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Centralized integration logging",
+      "description": "Improve observability",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-46",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Role-based recruiter dashboards",
+      "description": "Persona views",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-47",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "New job board integration",
+      "description": "Add niche life sciences board",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-48",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD content unclear",
+      "description": "Candidate reports JD responsibilities are unclear",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-49",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD shows incorrect location",
+      "description": "JD location does not match job posting",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-50",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD missing responsibilities section",
+      "description": "Responsibilities section not visible to candidate",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-51",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD displays wrong job title",
+      "description": "Job title in JD differs from requisition",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-52",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD formatting broken on career site",
+      "description": "Bullets and spacing not rendered correctly",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-53",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD not loading on career site",
+      "description": "Job description does not display for candidate",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-54",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD text overlaps on mobile",
+      "description": "JD unreadable on mobile device",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-55",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD contains outdated content",
+      "description": "Recruiter reports JD is outdated",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-56",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD differs between Workday and LinkedIn",
+      "description": "Content mismatch reported by recruiter",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-57",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD content truncated",
+      "description": "JD cut off mid-section in posting",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-58",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD experience requirement incorrect",
+      "description": "Experience range not accurate",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-59",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD missing shift details",
+      "description": "Shift requirements not mentioned",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-60",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD missing travel requirement",
+      "description": "Travel expectations not specified",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-61",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD changed after application",
+      "description": "Candidate sees updated JD post-apply",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-62",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD inconsistent with interview discussion",
+      "description": "Role scope differs from JD",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-63",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD content duplicated",
+      "description": "Sections repeated in JD",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-64",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD missing qualifications section",
+      "description": "Qualifications not displayed",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-65",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD changes not visible",
+      "description": "Recruiter edits not reflected",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-66",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD language confusing",
+      "description": "Terminology unclear for region",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-67",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD not aligned with application questions",
+      "description": "Application questions differ from JD",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-68",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD not defaulting from job profile",
+      "description": "JD does not auto-populate from job profile",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-69",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Incorrect JD version attached",
+      "description": "Outdated JD version linked to requisition",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-70",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD overwritten during requisition edit",
+      "description": "Standard JD replaced by manual edits",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-71",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Required skills duplicated in JD",
+      "description": "Skills section repeated",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-72",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Regulatory disclaimer missing",
+      "description": "Compliance text missing in JD",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-73",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Job level mismatch in JD",
+      "description": "JD reflects incorrect grade/level",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-74",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD not updated after job profile change",
+      "description": "JD not refreshed post profile update",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-75",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Special characters break JD format",
+      "description": "Symbols not rendered correctly",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-76",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "HTML tags visible in JD",
+      "description": "Raw HTML shown in posting",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-77",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD paragraph spacing lost",
+      "description": "Formatting changes after save",
+      "priority": {
+        "name": "Low"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-78",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Wrong JD language for country",
+      "description": "Incorrect language displayed",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-79",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "Country-specific legal text missing",
+      "description": "Mandatory clauses not shown",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-80",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD editable post-approval",
+      "description": "Approved JD can be modified",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-81",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD inconsistent across requisitions",
+      "description": "Same job profile yields different JDs",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-82",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD accessibility non-compliant",
+      "description": "JD not meeting accessibility standards",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-83",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD changes not audited",
+      "description": "No audit trail for JD updates",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-84",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD missing key sections",
+      "description": "Responsibilities/Qualifications hidden",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-85",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD truncated internally",
+      "description": "JD cut off within Workday UI",
+      "priority": {
+        "name": "Medium"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-86",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD not synced with requisition",
+      "description": "JD differs between req and posting",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  },
+  {
+    "key": "DEF-87",
+    "fields": {
+      "issuetype": {
+        "name": "Bug"
+      },
+      "summary": "JD approval workflow not enforced",
+      "description": "JD changes bypass approval",
+      "priority": {
+        "name": "High"
+      },
+      "status": {
+        "name": null
+      },
+      "assignee": null,
+      "reporter": null,
+      "environment": null,
+      "labels": [],
+      "components": [],
+      "created": null,
+      "updated": null
+    }
+  }
+]

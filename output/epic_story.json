@@ -1,0 +1,184 @@
+{
+  "epics": [
+    {
+      "description": "Integration of inclusivity evaluation tools directly into the Workday Recruiting environment to provide recruiters with immediate, actionable feedback during the job requisition creation process.",
+      "out_of_scope": "Modifications to Workday's core approval workflows or external job board integrations.",
+      "name": "Integrated Workday Inclusivity Experience",
+      "epic_id": "EPIC-001",
+      "in_scope": "Workday UI integration, real-time feedback loops, pre-submission scoring triggers, and optional scoring toggles."
+    },
+    {
+      "name": "Global Inclusivity Scoring Engine",
+      "in_scope": "ML model training for multiple languages, configurable scoring parameters (country/job type), and recalculation logic for existing requisitions.",
+      "epic_id": "EPIC-002",
+      "description": "Development and expansion of the ML-based scoring engine to support diverse languages and configurable logic based on regional or job-specific requirements.",
+      "out_of_scope": "Scoring for non-text based assets or non-supported languages."
+    },
+    {
+      "description": "Management of GenAI-driven recommendations, ensuring recruiters and managers maintain control over the final output through manual reviews and overrides.",
+      "out_of_scope": "Fully automated updates without human review.",
+      "name": "Human-in-the-Loop Recommendation Management",
+      "epic_id": "EPIC-003",
+      "in_scope": "Recommendation generation, recruiter acceptance/rejection workflows, and manager override capabilities."
+    },
+    {
+      "description": "Establishing a secure, scalable, and compliant backend infrastructure for data persistence and API access.",
+      "in_scope": "Data encryption, audit logging, historical trend storage, and secure RESTful API endpoints.",
+      "name": "Data Governance and Secure Infrastructure",
+      "epic_id": "EPIC-004",
+      "out_of_scope": "Storage of candidate PII."
+    },
+    {
+      "description": "Refinement of the Workday job requisition interface to improve user efficiency by removing unnecessary complexity.",
+      "name": "Workday UI Optimization",
+      "epic_id": "EPIC-005",
+      "in_scope": "Analysis of unused fields, automated data population, and UI cleanup within Workday.",
+      "out_of_scope": "Redesigning the entire Workday Recruiting module."
+    }
+  ],
+  "reasoning_log": [
+    {
+      "derived_from": "F-0001, F-0006, SIG-002, SIG-005, SIG-008",
+      "artifact_type": "Epic",
+      "reasoning": "Groups all items related to the recruiter's direct interaction within the Workday interface.",
+      "artifact_name": "EPIC-001"
+    },
+    {
+      "reasoning": "Consolidates the core ML engine capabilities and the requirement to expand into global, multi-language support.",
+      "derived_from": "F-0002, F-0004, SIG-006, SIG-009, SIG-010, SIG-011",
+      "artifact_type": "Epic",
+      "artifact_name": "EPIC-002"
+    },
+    {
+      "reasoning": "Addresses the conflict between F-0002 (English only) and SIG-010/011 (Multi-language) by treating the requirement as an enhancement.",
+      "artifact_type": "Story",
+      "artifact_name": "STORY-003",
+      "derived_from": "F-0002, SIG-010, SIG-011"
+    },
+    {
+      "artifact_type": "Story",
+      "artifact_name": "STORY-010",
+      "derived_from": "SIG-003, SIG-004",
+      "reasoning": "Created as a Gap Resolution story because the specific fields to be removed are currently undefined in the requirements."
+    }
+  ],
+  "stories": [
+    {
+      "tasks": "Establish bi-directional API connection between Workday and AWS, Embed scoring UI components in Workday requisition screen, Implement real-time trigger for text analysis during entry.",
+      "story_type": "Feature Implementation",
+      "epic_id": "EPIC-001",
+      "user_story": "As a Recruiter, I want to see inclusivity feedback while I am drafting a job requisition so that I can make improvements before submitting for approval.",
+      "system_tags": "Workday, AWS API Layer",
+      "title": "Real-time Inclusivity Feedback in Workday UI",
+      "feature_tags": "F-0001, F-0006",
+      "description": "Integrate the inclusivity scoring service directly into the Workday UI to replace the need for an external portal. Feedback must be instantaneous to support the creation workflow.",
+      "story_id": "STORY-001",
+      "acceptance_criteria": "Given a recruiter is on the Workday job requisition creation screen, When they enter text into the job description, Then the system must display real-time inclusivity scores and GenAI recommendations before the requisition is submitted.",
+      "traceability": "F-0001, F-0006, SIG-002, SIG-005"
+    },
+    {
+      "feature_tags": "F-0001, F-0006",
+      "story_type": "Enhancement",
+      "user_story": "As a Hiring Manager, I want the ability to choose whether to trigger inclusivity scoring so that I can manage the workflow during the pilot phase.",
+      "acceptance_criteria": "Given the job requisition screen, When a manager or recruiter starts a new requisition, Then they must have the option to enable or disable the inclusivity scoring trigger.",
+      "system_tags": "Workday",
+      "traceability": "SIG-008",
+      "title": "Optional Inclusivity Scoring Trigger",
+      "description": "Provide a toggle or optional trigger for inclusivity scoring to allow for flexibility during the pilot phase and for specific use cases where scoring may not be required.",
+      "story_id": "STORY-002",
+      "epic_id": "EPIC-001",
+      "tasks": "Add 'Enable Inclusivity Analysis' toggle to Workday UI, Update API logic to respect the optional trigger status."
+    },
+    {
+      "user_story": "As a Global Recruiter, I want the system to analyze job postings in multiple languages so that we can ensure inclusivity across all our operating regions.",
+      "title": "Multi-Language ML Inclusivity Analysis",
+      "story_type": "Enhancement",
+      "acceptance_criteria": "Given a job description in English, French, German, Italian, or Portuguese, When the scoring engine is invoked, Then it must provide a composite score and category-specific signals in the corresponding language.",
+      "feature_tags": "F-0002",
+      "epic_id": "EPIC-002",
+      "system_tags": "ML Engine",
+      "tasks": "Train/Fine-tune GenAI model for 5 supported languages, Update scoring algorithm to handle multi-language linguistic nuances, Validate category-specific signals for each language.",
+      "story_id": "STORY-003",
+      "description": "Enhance the ML engine to support five languages (English, French, German, Italian, Portuguese) for job postings across 10 countries. This overrides the initial English-only constraint.",
+      "traceability": "F-0002, SIG-010, SIG-011"
+    },
+    {
+      "epic_id": "EPIC-002",
+      "description": "The scoring logic must be flexible enough to account for different definitions of inclusivity based on job type and geographic location.",
+      "traceability": "F-0002, SIG-006",
+      "story_id": "STORY-004",
+      "feature_tags": "F-0002",
+      "tasks": "Define configuration schema for country-specific scoring rules, Update ML engine to ingest and apply metadata-based logic, Create administrative interface for managing scoring parameters.",
+      "title": "Configurable Scoring Logic by Region and Job Type",
+      "acceptance_criteria": "Given a job requisition, When the scoring engine is triggered, Then it must apply logic specific to the Job Type, Country, and Region metadata provided.",
+      "user_story": "As a Regional Talent Lead, I want the scoring logic to reflect local inclusivity standards so that the feedback is relevant to my specific market.",
+      "story_type": "Enhancement",
+      "system_tags": "ML Engine, Data Repository"
+    },
+    {
+      "story_id": "STORY-005",
+      "epic_id": "EPIC-002",
+      "traceability": "F-0004, SIG-009",
+      "system_tags": "AWS API Layer, AWS Compute Layer",
+      "story_type": "Feature Implementation",
+      "user_story": "As a Recruiter, I want to see an updated score immediately after I edit a job description so that I can verify my improvements.",
+      "acceptance_criteria": "Given an existing job requisition that is being edited, When the text is modified, Then the system must allow for a fresh score recalculation within 3 seconds.",
+      "feature_tags": "F-0004",
+      "title": "Score Recalculation for New and Existing Requisitions",
+      "description": "Support immediate score updates for both brand new requisitions and existing ones that are undergoing modifications.",
+      "tasks": "Implement recalculation trigger on text change, Ensure performance latency remains < 3 seconds for existing reqs, Update Workday UI to reflect recalculated scores."
+    },
+    {
+      "system_tags": "Workday, ML Engine",
+      "user_story": "As a Recruiter, I want to receive specific suggestions to improve my job posting so that I can take immediate action to make it more inclusive.",
+      "title": "Actionable Recommendation Generation and Review",
+      "story_id": "STORY-006",
+      "tasks": "Develop recommendation generation logic, Build UI for Accept/Reject workflow in Workday, Implement tracking for recommendation acceptance status.",
+      "acceptance_criteria": "Given an inclusivity analysis result, When recommendations are generated, Then the recruiter must be able to manually accept or reject each suggestion within the Workday UI.",
+      "story_type": "Feature Implementation",
+      "feature_tags": "F-0003",
+      "description": "Generate actionable recommendations based on the 22 features. Implement a human-in-the-loop requirement where recruiters must review suggestions.",
+      "traceability": "F-0003, F-0005",
+      "epic_id": "EPIC-003"
+    },
+    {
+      "acceptance_criteria": "Given a manager reviewing a requisition, When they disagree with an automated score or suggestion, Then they must be able to override the score and provide custom input based on local requirements.",
+      "description": "Enable managers to provide custom scoring and override automated suggestions to account for local nuances not captured by the ML engine.",
+      "feature_tags": "F-0003",
+      "title": "Manager Override and Custom Scoring",
+      "system_tags": "Workday, Data Repository",
+      "tasks": "Implement override functionality in the Workday UI, Create data fields to store 'Manager Adjusted' scores, Log reasons for overrides for future model improvement.",
+      "user_story": "As a Hiring Manager, I want to override automated suggestions so that I can apply local knowledge that the system might have missed.",
+      "story_id": "STORY-007",
+      "story_type": "Enhancement",
+      "epic_id": "EPIC-003",
+      "traceability": "SIG-007"
+    },
+    {
+      "feature_tags": "F-0005",
+      "story_type": "Feature Implementation",
+      "title": "Secure Inclusivity Data Repository",
+      "system_tags": "Data Persistence Layer",
+      "epic_id": "EPIC-004",
+      "description": "Establish a persistent data store for scores, feature results, and historical trends for audit purposes. Ensure strict security and privacy compliance.",
+      "user_story": "As a Compliance Officer, I want to ensure that all inclusivity data is stored securely and without PII so that we meet data privacy standards.",
+      "tasks": "Configure encrypted database for historical scoring data, Implement PII filtering to ensure no candidate data is stored, Develop audit logging for score changes.",
+      "traceability": "F-0005",
+      "acceptance_criteria": "Given the inclusivity data repository, When scores are stored, Then they must be encrypted at rest and in transit, and no candidate PII must be present.",
+      "story_id": "STORY-008"
+    },
+    {
+      "user_story": "As a Recruiter, I want a cleaner requisition screen with fewer unused fields so that I can complete the creation process more efficiently.",
+      "traceability": "SIG-003, SIG-004",
+      "feature_tags": "F-0006",
+      "title": "Workday Requisition Screen Field Analysis",
+      "story_type": "Gap Resolution",
+      "story_id": "STORY-010",
+      "acceptance_criteria": "Given the list of fields on the Workday job requisition screen, When the streamlining project begins, Then a finalized list of 'unused' fields and 'automated' fields must be documented and approved.",
+      "system_tags": "Workday",
+      "epic_id": "EPIC-005",
+      "tasks": "Conduct audit of current Workday requisition fields, Identify fields for removal or automation with stakeholders, Document technical requirements for automated data population.",
+      "description": "Identify which fields in the current Workday requisition screen are unused or can be automated to streamline the user experience. This is a gap resolution story to define the undefined scope in SIG-004."
+    }
+  ]
+}

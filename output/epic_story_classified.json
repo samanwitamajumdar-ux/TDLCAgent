@@ -1,0 +1,326 @@
+{
+  "epics": [
+    {
+      "epic_id": "EPIC-001",
+      "related_backlog_keys": "",
+      "name": "Workday Integration & User Experience Enhancement",
+      "description": "Integration of the inclusivity scoring tool within the Workday environment to streamline the job requisition process and provide real-time feedback to recruiters.",
+      "in_scope": "Workday Extend development, UI integration for real-time recommendations, screen streamlining, and optional scoring toggles.",
+      "out_of_scope": "Modifications to Workday's core delivered model beyond the requisition screen.",
+      "classification": "New"
+    },
+    {
+      "epic_id": "EPIC-002",
+      "related_backlog_keys": "",
+      "out_of_scope": "Scoring for non-job description text (e.g., candidate resumes).",
+      "classification": "New",
+      "name": "Core Inclusivity Scoring Engine",
+      "description": "Development and refinement of the ML-driven scoring engine, including support for configurable parameters and manual overrides.",
+      "in_scope": "ML model implementation for 22 signals, REST API development, configurable scoring logic, and manager override capabilities."
+    },
+    {
+      "in_scope": "NLP support for French, German, Italian, and Portuguese; localization of scoring signals.",
+      "name": "Global Language & Localization Support",
+      "epic_id": "EPIC-003",
+      "description": "Expansion of the tool's capabilities to support multiple languages and regions beyond the initial English-only scope.",
+      "related_backlog_keys": "DEF-78, DEF-79",
+      "classification": "Enhancement",
+      "out_of_scope": "Translation services for job descriptions."
+    },
+    {
+      "name": "Platform Performance, Audit & Governance",
+      "epic_id": "EPIC-004",
+      "out_of_scope": "Storage of candidate PII.",
+      "description": "Ensuring system reliability, data integrity, and alignment with technical standards through audit logging and performance scaling.",
+      "related_backlog_keys": "DEF-33, DEF-45",
+      "classification": "Enhancement",
+      "in_scope": "AWS scaling configuration, PII-compliant audit logging, and technical design documentation."
+    }
+  ],
+  "stories": [
+    {
+      "tasks": "Configure Workday Extend environment, Map Workday requisition fields to scoring API inputs",
+      "traceability": "F-0004, R-004",
+      "acceptance_criteria": "Given a developer has access to Workday, When building the integration, Then Workday Extend must be used as the primary development platform.",
+      "epic_id": "EPIC-001",
+      "user_story": "As a developer, I want to use Workday Extend so that the solution is built on the approved corporate platform.",
+      "classification": "New",
+      "feature_tags": "F-0004",
+      "story_id": "STORY-001",
+      "title": "Develop Integration using Workday Extend",
+      "system_tags": "Workday Extend",
+      "description": "Utilize Workday Extend to build the integration layer that connects Workday Recruiting with the AWS-based scoring engine.",
+      "story_type": "Feature Implementation",
+      "related_backlog_keys": ""
+    },
+    {
+      "tasks": "Integrate GenAI recommendation endpoint into Workday UI, Implement real-time trigger for scoring on text change",
+      "story_id": "STORY-002",
+      "feature_tags": "F-0002, F-0004",
+      "title": "Real-time GenAI Recommendations in Workday UI",
+      "related_backlog_keys": "",
+      "user_story": "As a recruiter, I want to see real-time inclusivity suggestions so that I can improve the job posting immediately without leaving Workday.",
+      "acceptance_criteria": "Given a recruiter is creating a job requisition in Workday, When they enter text, Then GenAI recommendations and inclusivity scores must appear in real-time on the same screen.",
+      "epic_id": "EPIC-001",
+      "classification": "New",
+      "system_tags": "Workday Recruiting, GenAI",
+      "traceability": "F-0002, F-0004, R-003",
+      "description": "Implement real-time feedback loops within the Workday UI using GenAI to provide suggestions as the job description is being written.",
+      "story_type": "Enhancement"
+    },
+    {
+      "system_tags": "Workday Recruiting",
+      "story_type": "Enhancement",
+      "story_id": "STORY-003",
+      "tasks": "Identify and remove unused requisition fields, Implement auto-population logic for standard fields",
+      "feature_tags": "F-0004",
+      "epic_id": "EPIC-001",
+      "acceptance_criteria": "Given the job requisition creation screen, When a user views the page, Then unused fields must be hidden and standard data must be auto-populated.",
+      "traceability": "F-0004, R-005",
+      "user_story": "As a recruiter, I want a streamlined requisition screen so that I can create job postings faster with less manual effort.",
+      "title": "Streamline Job Requisition Screen",
+      "classification": "Enhancement",
+      "related_backlog_keys": "DEF-1, DEF-13",
+      "description": "Optimize the Workday job requisition interface by removing unnecessary fields and automating data entry where possible."
+    },
+    {
+      "acceptance_criteria": "Given the pilot phase of the tool, When a manager creates a requisition, Then they must have the option to bypass the inclusivity scoring.",
+      "tasks": "Add optional scoring toggle to Workday UI, Update workflow logic to handle skipped scoring cycles",
+      "story_type": "Feature Implementation",
+      "epic_id": "EPIC-001",
+      "title": "Optional Scoring for Pilot Phase",
+      "classification": "New",
+      "related_backlog_keys": "",
+      "story_id": "STORY-004",
+      "feature_tags": "F-0004",
+      "description": "Introduce a configuration or toggle that allows users to opt-out of the scoring process during the initial pilot phase.",
+      "system_tags": "Workday Recruiting",
+      "user_story": "As a manager, I want the ability to opt-out of scoring during the pilot so that I can maintain flexibility during the rollout.",
+      "traceability": "F-0004, R-008"
+    },
+    {
+      "classification": "New",
+      "epic_id": "EPIC-002",
+      "related_backlog_keys": "",
+      "story_id": "STORY-005",
+      "tasks": "Conduct requirement workshops for regional scoring logic, Document scoring parameter matrix by job type and country",
+      "user_story": "As a product owner, I want to define the flexible scoring logic so that the engine provides accurate results across different regions.",
+      "acceptance_criteria": "Given the requirement for flexible scoring, When defining the system logic, Then the specific parameters for job types and regions must be documented and approved.",
+      "title": "Define Flexible Scoring Parameters",
+      "traceability": "F-0001, R-006, R-011",
+      "feature_tags": "F-0001",
+      "story_type": "Gap Resolution",
+      "description": "Collaborate with stakeholders to define the specific scoring logic and parameters for different job types and countries, as these are currently undefined."
+    },
+    {
+      "classification": "New",
+      "traceability": "F-0001, F-0002, R-007",
+      "feature_tags": "F-0001, F-0002",
+      "related_backlog_keys": "",
+      "story_id": "STORY-006",
+      "story_type": "Feature Implementation",
+      "acceptance_criteria": "Given a calculated inclusivity score, When a manager reviews the results, Then they must be able to override the suggestions and provide a custom score based on local context.",
+      "epic_id": "EPIC-002",
+      "user_story": "As a manager, I want to override automated suggestions so that I can account for specific local hiring requirements.",
+      "tasks": "Create override UI component in Workday, Implement logic to capture and store manual score adjustments",
+      "description": "Provide a mechanism for managers to manually adjust or override automated inclusivity scores when local requirements differ from the ML model's output.",
+      "title": "Manager Override and Custom Scoring"
+    },
+    {
+      "user_story": "As a recruiter, I want to recalculate scores for existing requisitions so that I can verify improvements made to older postings.",
+      "related_backlog_keys": "DEF-65, DEF-74",
+      "acceptance_criteria": "Given an existing or new job requisition, When the text is edited, Then the system must allow for a score recalculation.",
+      "epic_id": "EPIC-002",
+      "classification": "Enhancement",
+      "story_type": "Enhancement",
+      "traceability": "F-0003, R-009",
+      "story_id": "STORY-007",
+      "description": "Enable the ability to trigger a new scoring cycle for both newly created and existing job requisitions after updates are made to the text.",
+      "feature_tags": "F-0003",
+      "tasks": "Enable recalculation trigger for existing requisitions, Update API to handle re-scoring requests for saved requisitions",
+      "title": "Score Recalculation for New and Existing Requisitions"
+    },
+    {
+      "acceptance_criteria": "Given a request to the Scoring API, When the ML model processes the text, Then it must evaluate 22 specific signals across four categories: Clarity, Inclusive Culture, Exclusive Practices, and Language.",
+      "classification": "New",
+      "related_backlog_keys": "",
+      "story_id": "STORY-008",
+      "feature_tags": "F-0001, F-0006",
+      "tasks": "Implement 22-signal ML analysis logic, Secure API with Token-based authentication and HTTPS",
+      "traceability": "F-0001, F-0006, R-002",
+      "user_story": "As a system, I want to analyze job descriptions against 22 signals so that I can provide a comprehensive inclusivity score.",
+      "system_tags": "AWS API Gateway, ML Engine",
+      "description": "Implement the core ML scoring logic using 22 signals to generate a composite inclusivity score via a secure AWS REST API.",
+      "story_type": "Feature Implementation",
+      "title": "ML-Based Inclusivity Scoring Engine Implementation",
+      "epic_id": "EPIC-002"
+    },
+    {
+      "traceability": "F-0008, R-010",
+      "story_id": "STORY-009",
+      "classification": "Enhancement",
+      "title": "Multi-Language Support for Job Postings",
+      "description": "Expand the scoring engine to support multiple European languages, moving beyond the initial English-only constraint.",
+      "tasks": "Develop NLP models for French, German, Italian, and Portuguese, Validate scoring signals for linguistic nuances in each language",
+      "feature_tags": "F-0008",
+      "epic_id": "EPIC-003",
+      "acceptance_criteria": "Given a job description in French, German, Italian, or Portuguese, When submitted for scoring, Then the system must accurately evaluate the text based on localized inclusivity signals.",
+      "story_type": "Enhancement",
+      "user_story": "As a global recruiter, I want to score job descriptions in multiple languages so that I can ensure inclusivity across all regions.",
+      "related_backlog_keys": "DEF-66, DEF-78"
+    },
+    {
+      "story_id": "STORY-010",
+      "description": "Configure the AWS infrastructure to automatically scale to handle up to 5,000 monthly requisitions and peak activity periods.",
+      "epic_id": "EPIC-004",
+      "classification": "New",
+      "traceability": "F-0007, R-013",
+      "tasks": "Configure AWS Auto-scaling groups, Conduct load testing for 5,000 monthly requisitions volume",
+      "system_tags": "AWS",
+      "acceptance_criteria": "Given a peak hiring month like August, When volume reaches 5,000 requisitions, Then the system must maintain <3s performance and ≥99.9% availability.",
+      "feature_tags": "F-0007",
+      "story_type": "Enhancement",
+      "related_backlog_keys": "",
+      "title": "Automated Scaling for High Volume Performance",
+      "user_story": "As a system administrator, I want the system to scale automatically so that performance remains stable during peak hiring seasons."
+    },
+    {
+      "acceptance_criteria": "Given a completed scoring cycle, When the data is persisted, Then it must include scores and recommendations but exclude all candidate PII.",
+      "story_id": "STORY-011",
+      "tasks": "Design PII-free database schema for scoring results, Implement audit logging for recommendation acceptance status",
+      "description": "Implement a secure data persistence layer to store scoring history and audit logs while strictly adhering to PII-free business rules.",
+      "feature_tags": "F-0005",
+      "epic_id": "EPIC-004",
+      "title": "Secure Scoring Persistence and Audit Logging",
+      "user_story": "As an auditor, I want to see historical scoring changes without exposing PII so that I can analyze trends safely.",
+      "story_type": "Feature Implementation",
+      "related_backlog_keys": "DEF-33, DEF-83",
+      "classification": "Enhancement",
+      "traceability": "F-0005"
+    },
+    {
+      "epic_id": "EPIC-004",
+      "user_story": "As a technical lead, I want to review the design and backlog so that the team avoids redundant work and stays aligned on priorities.",
+      "acceptance_criteria": "Given the start of the implementation phase, When reviewing the project scope, Then a technical design document and updated backlog must be finalized.",
+      "description": "Produce the necessary technical design documentation and conduct a backlog review to ensure all priorities are aligned and redundant work is avoided.",
+      "story_type": "Gap Resolution",
+      "tasks": "Draft technical design document, Conduct backlog alignment session with stakeholders",
+      "related_backlog_keys": "",
+      "traceability": "R-012",
+      "story_id": "STORY-012",
+      "classification": "New",
+      "feature_tags": "F-0001, F-0004, F-0006",
+      "title": "Technical Design and Backlog Alignment"
+    }
+  ],
+  "reasoning_log": [
+    {
+      "artifact_id": "EPIC-001",
+      "artifact_type": "Epic",
+      "classification": "New",
+      "reasoning": "No existing backlog item addresses the integration of an inclusivity scoring tool or the use of Workday Extend for real-time recruiter feedback."
+    },
+    {
+      "artifact_id": "EPIC-002",
+      "classification": "New",
+      "artifact_type": "Epic",
+      "reasoning": "The existing backlog contains candidate screening AI (DEF-36) but lacks any mention of a machine learning engine specifically for job description inclusivity analysis."
+    },
+    {
+      "artifact_id": "EPIC-003",
+      "backlog_reference": "DEF-78, DEF-79",
+      "reasoning": "The backlog identifies issues with wrong languages and missing legal text; this epic adds a functional layer of linguistic analysis for those regions.",
+      "impact": "Extends existing language and legal text requirements by introducing automated NLP scoring support for specific European languages (French, German, Italian, Portuguese).",
+      "classification": "Enhancement",
+      "artifact_type": "Epic"
+    },
+    {
+      "artifact_id": "EPIC-004",
+      "backlog_reference": "DEF-33, DEF-45",
+      "artifact_type": "Epic",
+      "impact": "Adds high-scale AWS performance requirements and PII-compliant audit logic to existing basic audit and logging concepts.",
+      "reasoning": "The backlog includes basic auditing and logging bugs; this epic refines those into a comprehensive governance and performance framework.",
+      "classification": "Enhancement"
+    },
+    {
+      "artifact_type": "Story",
+      "classification": "New",
+      "artifact_id": "STORY-001",
+      "reasoning": "The use of Workday Extend as a development platform for external API integration is not covered in the current backlog."
+    },
+    {
+      "artifact_id": "STORY-002",
+      "artifact_type": "Story",
+      "classification": "New",
+      "reasoning": "Real-time GenAI feedback within the Workday UI is a new capability not mentioned in existing JD-related bugs."
+    },
+    {
+      "reasoning": "Existing bugs report general issues with creating or viewing requisitions; this story provides a specific UI optimization to resolve those friction points.",
+      "artifact_type": "Story",
+      "backlog_reference": "DEF-1, DEF-13",
+      "impact": "Addresses requisition creation difficulties by introducing field hiding and auto-population logic to simplify the UI.",
+      "classification": "Enhancement",
+      "artifact_id": "STORY-003"
+    },
+    {
+      "artifact_id": "STORY-004",
+      "reasoning": "The concept of a pilot-phase toggle for scoring is specific to this new feature and has no precedent in the backlog.",
+      "classification": "New",
+      "artifact_type": "Story"
+    },
+    {
+      "reasoning": "Defining regional scoring parameters is a new requirement for the inclusivity engine.",
+      "classification": "New",
+      "artifact_id": "STORY-005",
+      "artifact_type": "Story"
+    },
+    {
+      "artifact_type": "Story",
+      "artifact_id": "STORY-006",
+      "reasoning": "Manual override of automated scoring is a new functional requirement not present in existing items.",
+      "classification": "New"
+    },
+    {
+      "artifact_type": "Story",
+      "classification": "Enhancement",
+      "backlog_reference": "DEF-65, DEF-74",
+      "impact": "Introduces a specific recalculation trigger for the scoring engine when JD edits are made, addressing the gap where changes are not reflected.",
+      "reasoning": "The backlog notes that JD changes are sometimes not visible or refreshed; this story adds a functional trigger to ensure scoring stays in sync with edits.",
+      "artifact_id": "STORY-007"
+    },
+    {
+      "classification": "New",
+      "artifact_id": "STORY-008",
+      "artifact_type": "Story",
+      "reasoning": "The implementation of a 22-signal ML model for inclusivity is distinct from any existing candidate screening or job posting tasks."
+    },
+    {
+      "backlog_reference": "DEF-66, DEF-78",
+      "reasoning": "The backlog identifies confusing or incorrect language; this story provides the technical solution to analyze and score those languages.",
+      "classification": "Enhancement",
+      "artifact_id": "STORY-009",
+      "artifact_type": "Story",
+      "impact": "Adds automated linguistic evaluation for inclusivity to existing requirements for correct language and terminology."
+    },
+    {
+      "artifact_type": "Story",
+      "classification": "New",
+      "reasoning": "Infrastructure scaling for high-volume requisition processing is not addressed in the current bug list.",
+      "artifact_id": "STORY-010"
+    },
+    {
+      "reasoning": "The backlog identifies missing audit trails for JD changes; this story extends that to include the new scoring data while ensuring data privacy.",
+      "backlog_reference": "DEF-33, DEF-83",
+      "artifact_id": "STORY-011",
+      "artifact_type": "Story",
+      "impact": "Refines existing audit requirements by adding PII-free persistence rules and specific scoring history tracking.",
+      "classification": "Enhancement"
+    },
+    {
+      "artifact_type": "Story",
+      "classification": "New",
+      "artifact_id": "STORY-012",
+      "reasoning": "Technical design documentation and backlog alignment are project-level tasks not represented in the existing issue list."
+    }
+  ]
+}
